@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{627E98A2-B3ED-4D47-AA4C-0C7A153DBB80}</ProjectGuid>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <Keyword>ManagedCProj</Keyword>
+    <RootNamespace>KursProject</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>Main</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>Main</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Reference Include="MainFunction">
+      <HintPath>..\Library\MainFunction\Debug\MainFunction.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="QuestionFunction">
+      <HintPath>..\Library\QuestionFunction\Debug\QuestionFunction.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="authenti.cpp" />
+    <ClCompile Include="global.cpp" />
+    <ClCompile Include="mainmenu.cpp" />
+    <ClCompile Include="question1.cpp" />
+    <ClCompile Include="question10.cpp" />
+    <ClCompile Include="question11.cpp" />
+    <ClCompile Include="question12.cpp" />
+    <ClCompile Include="question13.cpp" />
+    <ClCompile Include="question14.cpp" />
+    <ClCompile Include="question15.cpp" />
+    <ClCompile Include="question16.cpp" />
+    <ClCompile Include="question2.cpp" />
+    <ClCompile Include="question3.cpp" />
+    <ClCompile Include="question4.cpp" />
+    <ClCompile Include="question5.cpp" />
+    <ClCompile Include="question6.cpp" />
+    <ClCompile Include="question7.cpp" />
+    <ClCompile Include="question8.cpp" />
+    <ClCompile Include="question9.cpp" />
+    <ClCompile Include="questions.cpp" />
+    <ClCompile Include="rezulttest.cpp" />
+    <ClCompile Include="theory.cpp" />
+    <ClCompile Include="titlelist.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="authenti.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="global.h" />
+    <ClInclude Include="mainmenu.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="question1.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="question10.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="question11.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="question12.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="question13.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="question14.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="question15.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="question16.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="question2.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="question3.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="question4.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="question5.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="question6.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="question7.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="question8.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="question9.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="questions.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="rezulttest.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="theory.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="titlelist.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="authenti.resx">
+      <DependentUpon>authenti.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mainmenu.resx">
+      <DependentUpon>mainmenu.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="question1.resx">
+      <DependentUpon>question1.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="question10.resx">
+      <DependentUpon>question10.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="question11.resx">
+      <DependentUpon>question11.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="question12.resx">
+      <DependentUpon>question12.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="question13.resx">
+      <DependentUpon>question13.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="question14.resx">
+      <DependentUpon>question14.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="question15.resx">
+      <DependentUpon>question15.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="question16.resx">
+      <DependentUpon>question16.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="question2.resx">
+      <DependentUpon>question2.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="question3.resx">
+      <DependentUpon>question3.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="question4.resx">
+      <DependentUpon>question4.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="question5.resx">
+      <DependentUpon>question5.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="question6.resx">
+      <DependentUpon>question6.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="question7.resx">
+      <DependentUpon>question7.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="question8.resx">
+      <DependentUpon>question8.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="question9.resx">
+      <DependentUpon>question9.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="questions.resx">
+      <DependentUpon>questions.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rezulttest.resx">
+      <DependentUpon>rezulttest.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="theory.resx">
+      <DependentUpon>theory.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="titlelist.resx">
+      <DependentUpon>titlelist.h</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Word.8.7.dll">
+      <VersionMinor>7</VersionMinor>
+      <VersionMajor>8</VersionMajor>
+      <Guid>00020905-0000-0000-c000-000000000046</Guid>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>false</Isolated>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Access.9.0.dll">
+      <VersionMinor>0</VersionMinor>
+      <VersionMajor>9</VersionMajor>
+      <Guid>4affc9a0-5f99-101b-af4e-00aa003f0f07</Guid>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>false</Isolated>
+    </COMReference>
+    <COMReference Include="ADOX.2.8.dll">
+      <VersionMinor>8</VersionMinor>
+      <VersionMajor>2</VersionMajor>
+      <Guid>00000600-0000-0010-8000-00aa006d2ea4</Guid>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>false</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
